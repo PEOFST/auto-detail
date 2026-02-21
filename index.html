@@ -1,65 +1,247 @@
 ﻿<!doctype html>
 <html lang="sk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calendly Bubble Widget</title>
-    <style>
-      body {
-        margin: 0;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        background: #111;
-        color: #f2f2f2;
-        display: grid;
-        min-height: 100vh;
-        place-items: center;
-        padding: 24px;
-      }
-      .card {
-        max-width: 860px;
-        width: 100%;
-        background: #1c1c1c;
-        border: 1px solid #2a2a2a;
-        border-radius: 14px;
-        padding: 24px;
-      }
-      h1 {
-        margin: 0 0 8px;
-        font-size: 28px;
-      }
-      p {
-        margin: 8px 0;
-        color: #cfcfcf;
-      }
-      pre {
-        margin: 16px 0 0;
-        padding: 16px;
-        background: #0d0d0d;
-        border: 1px solid #2b2b2b;
-        border-radius: 10px;
-        overflow: auto;
-        color: #ffb48f;
-      }
-      code {
-        font-family: Consolas, "Courier New", monospace;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="card">
-      <h1>Calendly Bubble Widget</h1>
-      <p>Widget je pripraveny na vlozenie do klientskej stranky jednym script tagom.</p>
-      <p>Vymen URL domeny a Calendly link za tvoje hodnoty.</p>
-<pre><code>&lt;script
-  src="https://YOUR-VERCEL-DOMAIN.vercel.app/app.js"
-  data-calendly-url="https://calendly.com/dealershipsk/new-meeting"
-  data-right="16px"
-  data-bottom="16px"
-  data-z-index="2147483000"
-  defer
-&gt;&lt;/script&gt;</code></pre>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stiro | Prémiový autodetailing</title>
+  <meta name="description" content="Stiro – korekcia laku, keramická ochrana, detailing interiéru a príprava áut na predaj." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="gradient gradient-a"></div>
+  <div class="gradient gradient-b"></div>
 
-    <script src="./app.js" data-calendly-url="https://calendly.com/dealershipsk/new-meeting" defer></script>
-  </body>
+  <header class="nav">
+    <div class="brand">
+      <div class="brand-mark">S</div>
+      <div>
+        <div class="brand-name">Stiro</div>
+        <div class="brand-tag">Auto Detailing</div>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <a href="#services">Služby</a>
+      <a href="#pricing">Balíky</a>
+      <a href="#process">Proces</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+    <button class="btn btn-primary" data-book>Rezervovať</button>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" id="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Prémiový autodetailing • Bratislava</p>
+        <h1>Lesk showroomu, ochrana na roky a starostlivosť bez kompromisov.</h1>
+        <p class="lead">Korekcia laku, keramická ochrana, detailing interiéru a príprava áut na predaj pre majiteľov, ktorí chcú, aby ich auto pôsobilo ako nové – každý deň.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" data-book>Rezervovať termín</button>
+          <a class="btn btn-ghost" href="#services">Zisti viac</a>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <span>500+</span>
+            <p>ošetrených áut</p>
+          </div>
+          <div class="stat">
+            <span>4,9★</span>
+            <p>spokojnosť klientov</p>
+          </div>
+          <div class="stat">
+            <span>48 h</span>
+            <p>potvrdenie termínu</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card card">
+        <div class="pill">Keramika • Korekcia • Interiér</div>
+        <h3>Balík „Showroom“</h3>
+        <ul class="checklist">
+          <li>2-kroková korekcia laku</li>
+          <li>5-ročná keramická ochrana</li>
+          <li>Detailing interiéru a kože</li>
+          <li>Ochrana diskov a skiel</li>
+        </ul>
+        <div class="price">od 420 €</div>
+        <button class="btn btn-secondary" data-book>Rezervovať</button>
+        <p class="fineprint">Osobná konzultácia pred potvrdením objednávky.</p>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="section-head">
+        <p class="eyebrow">Čo robíme</p>
+        <h2>Detailing na mieru tvojmu autu</h2>
+        <p class="muted">Zameriavame sa na ochranu, obnovu a dlhodobú údržbu. Používame osvedčené produkty, precízny postup a detailnú kontrolu kvality.</p>
+      </div>
+      <div class="grid services">
+        <article class="card service">
+          <div class="pill pill-light">Ochrana</div>
+          <h3>Keramická ochrana laku</h3>
+          <p>Hydrofóbny efekt, hlboký lesk a jednoduchšia údržba na 2–5 rokov podľa zvoleného systému.</p>
+        </article>
+        <article class="card service">
+          <div class="pill pill-light">Obnova</div>
+          <h3>Korekcia laku</h3>
+          <p>Odstránenie špirál, hologramov a oxidácie pre showroomový vzhľad bez kompromisov.</p>
+        </article>
+        <article class="card service">
+          <div class="pill pill-light">Interiér</div>
+          <h3>Detailing interiéru</h3>
+          <p>Hĺbkové čistenie, ošetrenie plastov a kože, dezinfekcia klimatizácie a ozonizácia.</p>
+        </article>
+        <article class="card service">
+          <div class="pill pill-light">Kolesá & sklá</div>
+          <h3>Ochrana kolies a skiel</h3>
+          <p>Ceramic coat na disky a sklá pre jednoduché čistenie a bezpečnú jazdu v daždi.</p>
+        </article>
+        <article class="card service">
+          <div class="pill pill-light">Údržba</div>
+          <h3>Pravidelné programy</h3>
+          <p>Mesačné alebo kvartálne umytia s jemnou chemiou, aby ochrana vydržala čo najdlhšie.</p>
+        </article>
+        <article class="card service">
+          <div class="pill pill-light">Predaj</div>
+          <h3>Príprava na predaj</h3>
+          <p>Kompletné oživenie exteriéru aj interiéru tak, aby auto pôsobilo dôveryhodne a prémiovo.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="pricing" class="section">
+      <div class="section-head">
+        <p class="eyebrow">Balíky</p>
+        <h2>Vyber si úroveň starostlivosti</h2>
+        <p class="muted">Ceny sú orientačné; finálnu kalkuláciu upravíme podľa stavu laku a veľkosti vozidla.</p>
+      </div>
+      <div class="grid pricing">
+        <article class="card price-card">
+          <div class="pill">Údržba</div>
+          <h3>Refresh</h3>
+          <p class="muted">Jemné jedno-krokové leštenie + ochrana na 12 mesiacov.</p>
+          <ul class="checklist small">
+            <li>Predumytie a dekontaminácia</li>
+            <li>Jednokroková korekcia</li>
+            <li>1-ročná keramická ochrana</li>
+          </ul>
+          <div class="price">od 230 €</div>
+          <button class="btn btn-secondary" data-book>Objednať</button>
+        </article>
+        <article class="card price-card featured">
+          <div class="pill pill-strong">Najobľúbenejší</div>
+          <h3>Showroom</h3>
+          <p class="muted">Dvojkroková korekcia + 5-ročná keramická ochrana.</p>
+          <ul class="checklist small">
+            <li>Hĺbková dekontaminácia</li>
+            <li>2-kroková korekcia laku</li>
+            <li>5-ročná keramika + disky + sklá</li>
+          </ul>
+          <div class="price">od 420 €</div>
+          <button class="btn btn-primary" data-book>Rezervovať</button>
+        </article>
+        <article class="card price-card">
+          <div class="pill">Prémiový</div>
+          <h3>Concours</h3>
+          <p class="muted">Špeciál pre zberateľské a tmavé laky s maximálnym leskom.</p>
+          <ul class="checklist small">
+            <li>Viacstupňová korekcia</li>
+            <li>Show car finálny finish</li>
+            <li>Keramika alebo vosk podľa preferencie</li>
+          </ul>
+          <div class="price">individuálna cena</div>
+          <button class="btn btn-secondary" data-book>Konzultácia</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="process" class="section process">
+      <div class="section-head">
+        <p class="eyebrow">Ako pracujeme</p>
+        <h2>Transparentný postup v 4 krokoch</h2>
+      </div>
+      <ol class="timeline">
+        <li>
+          <div class="step">01</div>
+          <div>
+            <h4>Diagnostika</h4>
+            <p>Spolu si prejdeme auto, potreby a cieľ. Navrhneme riešenie a potvrdíme cenu.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step">02</div>
+          <div>
+            <h4>Príprava</h4>
+            <p>Dekontaminácia, prelepenie citlivých častí, meranie laku a testovací panel.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step">03</div>
+          <div>
+            <h4>Detailing</h4>
+            <p>Korekcia, ochrana, interiér. Každý krok fotíme pre dokumentáciu.</p>
+          </div>
+        </li>
+        <li>
+          <div class="step">04</div>
+          <div>
+            <h4>Odovzdanie</h4>
+            <p>Kontrola v dennom aj studenom svetle, tipy na údržbu a plán servisných návštev.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="cta" class="cta card">
+      <div>
+        <p class="eyebrow">Pripravený na nový lesk?</p>
+        <h2>Zabookuj termín a my sa postaráme o zvyšok.</h2>
+        <p class="muted">Klikni na “Rezervovať” a otvorí sa ti náš Calendly kalendár. Ak nevidíš bublinu, otvoríme ho v novom okne.</p>
+      </div>
+      <button class="btn btn-primary btn-large" data-book>Rezervovať teraz</button>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="card contact-card">
+        <h3>Kontakt</h3>
+        <p class="muted">Radi ti poradíme s výberom balíka alebo pripravíme individuálnu ponuku.</p>
+        <div class="contact-row"><span>📞</span> <a href="tel:+421000000000">+421 000 000 000</a></div>
+        <div class="contact-row"><span>✉️</span> <a href="mailto:info@stiro.sk">info@stiro.sk</a></div>
+        <div class="contact-row"><span>📍</span> Bratislava • po dohode</div>
+      </div>
+      <div class="card hours-card">
+        <h3>Otváracie hodiny</h3>
+        <p class="muted">Po–Pia 8:00–18:00 • Sobota podľa dohody</p>
+        <p class="muted">Termíny plánujeme cez Calendly, aby sme mali na každé auto dostatok času.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div class="brand-footer">Stiro Auto Detailing</div>
+      <div class="muted">Prémiová starostlivosť o lak, interiér a dlhodobú ochranu vozidiel. © 2026</div>
+    </div>
+  </footer>
+
+  <script src="./app.js" data-calendly-url="https://calendly.com/dealershipsk/new-meeting" defer></script>
+  <script>
+    window.addEventListener("load", () => {
+      const buttons = document.querySelectorAll("[data-book]");
+      buttons.forEach(btn => {
+        btn.addEventListener("click", () => {
+          const bubble = document.getElementById("cbw-button");
+          if (bubble) {
+            bubble.click();
+          } else {
+            window.open("https://calendly.com/dealershipsk/new-meeting", "_blank");
+          }
+        });
+      });
+    });
+  </script>
+</body>
 </html>
